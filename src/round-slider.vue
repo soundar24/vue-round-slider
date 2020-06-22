@@ -10,6 +10,7 @@ export default {
   name: 'RoundSlider',
 
   props: {
+    // Basic props (frequently used)
     min: {
       type: [String, Number],
       default: 0
@@ -34,9 +35,12 @@ export default {
       type: [String, Number],
       default: 20
     },
-    handleSize: {
-      type: [String, Number],
-      default: "+0"
+    lineCap: {
+      type: String,
+      default: "butt",
+      validator(cap) {
+        return validateProp('lineCap', cap);
+      },
     },
     startAngle: {
       type: [String, Number],
@@ -46,68 +50,8 @@ export default {
       type: [String, Number],
       default: "+360"
     },
-    animation: {
-      type: [String, Boolean],
-      default: true
-    },
-    showTooltip: {
-      type: [String, Boolean],
-      default: true
-    },
-    editableTooltip: {
-      type: [String, Boolean],
-      default: true
-    },
-    readOnly: {
-      type: [String, Boolean],
-      default: false
-    },
-    disabled: {
-      type: [String, Boolean],
-      default: false
-    },
-    keyboardAction: {
-      type: [String, Boolean],
-      default: true
-    },
-    mouseScrollAction: {
-      type: [String, Boolean],
-      default: false
-    },
-    lineCap: {
-      type: String,
-      default: "butt",
-      validator(cap) {
-        return validateProp('lineCap', cap);
-      },
-    },
-    sliderType: {
-      type: String,
-      default: "min-range",
-      validator(type) {
-        return validateProp('sliderType', type);
-      },
-    },
-    circleShape: {
-      type: String,
-      default: "full",
-      validator(shape) {
-        return validateProp('circleShape', shape);
-      },
-    },
-    handleShape: {
-      type: String,
-      default: "round",
-      validator(shape) {
-        return validateProp('handleShape', shape);
-      },
-    },
-    startValue: {
-      type: [String, Number],
-      default: null
-    },
 
-    // round-slider appearance related properties
+    // UI appearance related props
     borderWidth: {
       type: [String, Number],
       default: 0
@@ -129,7 +73,70 @@ export default {
       default: "inherit"
     },
 
-    // events
+    // Behaviour related props
+    sliderType: {
+      type: String,
+      default: "min-range",
+      validator(type) {
+        return validateProp('sliderType', type);
+      },
+    },
+    circleShape: {
+      type: String,
+      default: "full",
+      validator(shape) {
+        return validateProp('circleShape', shape);
+      },
+    },
+    animation: {
+      type: [String, Boolean],
+      default: true
+    },
+    readOnly: {
+      type: [String, Boolean],
+      default: false
+    },
+    disabled: {
+      type: [String, Boolean],
+      default: false
+    },
+
+    // Miscellaneous
+    handleSize: {
+      type: [String, Number],
+      default: "+0"
+    },
+    handleShape: {
+      type: String,
+      default: "round",
+      validator(shape) {
+        return validateProp('handleShape', shape);
+      },
+    },
+    showTooltip: {
+      type: [String, Boolean],
+      default: true
+    },
+    editableTooltip: {
+      type: [String, Boolean],
+      default: true
+    },
+    keyboardAction: {
+      type: [String, Boolean],
+      default: true
+    },
+    mouseScrollAction: {
+      type: [String, Boolean],
+      default: false
+    },
+
+    // Usecase related props
+    startValue: {
+      type: [String, Number],
+      default: null
+    },
+
+    // Events
     create: {
       type: Function,
       default: null,
@@ -265,7 +272,7 @@ const validateProp = (prop, value) => {
     transition: all 0.5s ease-in-out 0s;
   }
 
-  .rs-tooltip.hover, .rs-tooltip.edit:hover {
+  .rs-tooltip.rs-hover, .rs-tooltip.rs-edit:hover {
     border: 1px solid #cacaca;
   }
 </style>
