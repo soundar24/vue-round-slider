@@ -1,0 +1,63 @@
+{
+  "name": "vue-round-slider",
+  "version": "1.0.0",
+  "description": "A round slider plugin for Vue JS",
+  "keywords": [
+    "vuejs", "round-slider", "vue-round-slider",
+    "circle-slider", "radial-slider","knob", "range-slider",
+    "pie", "half-circle", "quarter-circle", "pie-circle",
+    "arc-slider", "semi-circle-slider", "circular-slider"
+  ],
+  "author": "soundar24",
+  "homepage": "https://vue.roundsliderui.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soundar24/vue-round-slider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soundar24/vue-round-slider/issues"
+  },
+  "license": "MIT",
+  "main": "dist/vue-roundslider.umd.js",
+  "module": "dist/vue-roundslider.esm.js",
+  "unpkg": "dist/vue-roundslider.min.js",
+  "jsdelivr": "dist/vue-roundslider.min.js",
+  "browser": {
+    "./sfc": "src/round-slider.vue"
+  },
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "npm run build:umd && npm run build:es && npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "build:es": "rollup --config build/rollup.config.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.unpkg.js && npm run unpkg:add-banner",
+    "unpkg:add-banner": "rollup --config build/rollup.config.unpkg-banner.js",
+    "dev": "npm run build:unpkg --watch"
+  },
+  "dependencies": {
+    "round-slider": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "flush-promises": "^1.0.2",
+    "rollup": "^1.15.1",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-eslint": "^6.0.0",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-vue": "^5.0.0",
+    "stylus": "^0.54.5",
+    "uglify-es": "^3.3.9",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue roundSlider local demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="../../dist/vue-roundslider.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+      }
+      .rs-control {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1 style="text-decoration: underline;">{{ title }}</h1>
+      
+      <h2>Vue-Round-Slider</h2>
+      <round-slider
+        v-model="sliderValue"
+      >
+      </round-slider>
+
+      <br>
+
+      <h2>Text Element</h2>
+      <div>{{sliderValue}}</div>
+
+      <br>
+
+      <h2>Input Element</h2>
+      <input v-model="sliderValue" />
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        created() {
+          console.log('demo loaded');
+        },
+        data: {
+          title: 'A simple Vue App',
+          sliderValue: 60
+        },
+      });
+    </script>
+  </body>
+</html>
