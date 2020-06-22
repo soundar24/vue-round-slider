@@ -1,7 +1,7 @@
 {
   "name": "vue-round-slider",
   "version": "1.0.0",
-  "description": "A round slider plugin for Vue JS",
+  "description": "A round slider component for Vue.js with range support. Also it can be any kind of arc slider such as pie shape, half / semi-circle, quarter circle shape sliders.",
   "keywords": [
     "vuejs", "round-slider", "vue-round-slider",
     "circle-slider", "radial-slider","knob", "range-slider",
