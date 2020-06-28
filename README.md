@@ -154,6 +154,8 @@ For better understanding the props was arranged based on some categories such as
 
 ### Events
 
+> Note: The event hanlders should be passed like `v-bind:update="handler"` or `:update="handler"` as same as the props, instead of `v-on:`. Since this acts like a wrapper of roundSlider, so the events will be treated as props.
+
 | name              | description                                                                                                                     |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | create            | This event triggered after the control creation or initialization\.                                                             |
