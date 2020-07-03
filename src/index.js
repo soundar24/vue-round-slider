@@ -12,6 +12,7 @@ const install = function installRoundSlider(Vue) {
 const plugin = {
   // eslint-disable-next-line no-undef
   version: VERSION,
+  name: component.name,
   install,
 };
 // eslint-disable-next-line no-undef

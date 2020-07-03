@@ -1,5 +1,5 @@
 /*!
-* vue-round-slider v1.0.0
+* vue-round-slider v1.0.1
 *
 * @website https://vue.roundsliderui.com/
 * @copyright (c) 2020 Soundar
@@ -450,11 +450,12 @@ var install = function installRoundSlider(Vue) {
 // Create module definition for Vue.use()
 var plugin = {
   // eslint-disable-next-line no-undef
-  version: "1.0.0",
+  version: "1.0.1",
+  name: __vue_component__.name,
   install: install,
 };
 // eslint-disable-next-line no-undef
-__vue_component__.version = "1.0.0";
+__vue_component__.version = "1.0.1";
 
 // To auto-install on non-es builds, when vue is found
 // eslint-disable-next-line no-redeclare
