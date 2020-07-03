@@ -37,9 +37,6 @@
     "src/",
     "dist/"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "build": "npm run build:umd && npm run build:es && npm run build:unpkg",
     "build:umd": "rollup --config build/rollup.config.umd.js",
@@ -49,7 +46,7 @@
     "dev": "npm run build:unpkg --watch"
   },
   "dependencies": {
-    "round-slider": "^1.6.0"
+    "round-slider": "^1.6.1"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
