@@ -58,7 +58,7 @@ export default {
     },
     borderColor: {
       type: String,
-      default: null
+      default: "inherit"
     },
     pathColor: {
       type: String,
