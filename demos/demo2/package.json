@@ -11,7 +11,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "jquery": "3.5.1",
-    "vue-round-slider": "^1.0.0"
+    "vue-round-slider": "*"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
