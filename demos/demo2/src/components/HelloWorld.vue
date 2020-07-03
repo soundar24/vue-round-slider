@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Vue-Round-Slider</h3>
+
+    <h2>
+      <a href="https://vue.roundsliderui.com/" target="_blank">
+        Vue-Round-Slider [v{{version}}]
+      </a>
+    </h2>
+
     <div class="box">
       <round-slider
         v-model="sliderValue"
@@ -29,6 +30,11 @@ export default {
   name: 'HelloWorld',
   components: {
     RoundSlider,
+  },
+  computed: {
+    version() {
+      return RoundSlider.version;
+    }
   },
   props: {
     msg: String
