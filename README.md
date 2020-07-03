@@ -38,6 +38,7 @@
 - [Getting started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
+- [Quick Start](#quick-start)
 - [APIs](#apis)
   - [Props](#props)
   - [Events](#events)
@@ -105,6 +106,14 @@ new Vue({
   },
 })
 ```
+
+## Quick Start
+
+The easiest way to try and start using **vue-round-slider** is using **JSFiddle** or **CodeSandbox**. For round-slider projects,
+* based on vue-cli 3 you can try the below CodeSandbox
+    * <a href="https://codesandbox.io/s/vue-round-slider-demo-oz8el?file=/src/components/SliderDemo.vue"> CodeSandbox Demo </a>
+* based on CDN you can try the below JSFiddle
+    * <a href="https://jsfiddle.net/soundar24/snoLch2w/"> JSFiddle Demo </a>
 
 ## APIs
 
