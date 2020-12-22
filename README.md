@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://vue.roundsliderui.com"> https://vue.roundsliderui.com </a> <br />
+  <a href="http://vue.roundsliderui.com"> http://vue.roundsliderui.com </a> <br />
 </p>
 
 <p align="center">
