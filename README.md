@@ -113,7 +113,7 @@ The easiest way to try and start using **vue-round-slider** is using **JSFiddle*
 * based on vue-cli 3 you can try the below CodeSandbox
     * <a href="https://codesandbox.io/s/vue-round-slider-demo-oz8el?file=/src/components/SliderDemo.vue"> CodeSandbox Demo </a>
 * based on <a href="https://www.jsdelivr.com/package/npm/vue-round-slider">CDN</a> you can try the below JSFiddle
-    * <a href="https://jsfiddle.net/soundar24/snoLch2w/"> JSFiddle Demo </a>
+    * <a href="https://jsfiddle.net/soundar24/jc5tenva/"> JSFiddle Demo </a>
 
 ## APIs
 
