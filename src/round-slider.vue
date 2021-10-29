@@ -157,6 +157,18 @@ export default {
       type: Function,
       default: null,
     },
+    start: {
+      type: Function,
+      default: null,
+    },
+    stop: {
+      type: Function,
+      default: null,
+    },
+    drag: {
+      type: Function,
+      default: null,
+    },
     tooltipFormat: {
       type: Function,
       default: null,

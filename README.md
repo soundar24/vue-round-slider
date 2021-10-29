@@ -166,8 +166,11 @@ For better understanding the props was arranged based on some categories such as
 | create            | This event triggered after the control creation or initialization\.                                                                                         |
 | beforeValueChange | This event will be triggered before the value change happens\. And this event can be cancellable\.                                                          |
 | change            | This event triggered when the slider's value gets changed\.                                                                                                 |
+| start             | This event triggered when the user starts to drag the handle\.                                                                                              |
+| stop              | This event triggered when the user stops from sliding the handle / when releasing the handle\.                                                              |
+| drag              | This event triggered when the user moving the handle\. On each mouse move the drag event will trigger\.                                                     |
 | update            | This event triggered when the slider value updated such as during change as well as the handle drag\. Simply it is the combination of "change" and "drag"\. |
-| valueChange       | This event is similar to 'update' event, in addition it will trigger even the value was changed through programmatically also\.                             |
+| valueChange       | This event is similar to 'update' event, in addition it will trigger even the value was changed through programmatically also\.                   |
 | tooltipFormat     | This event will act as a callback\. So you can customize the tooltip template by returning with the custom values here\.                                    |
 
 # Screenshots
